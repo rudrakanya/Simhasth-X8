@@ -1,13 +1,13 @@
 # Simhasth-X8
 Documentation for creating zero-emission virtual heritage experiences using LiDAR scanning and Mixed Reality technologies. The project focuses on digitally preserving and making accessible Madhya Pradesh's remote, ecologically sensitive heritage sites through immersive digital twins with zero-emissions.
 
+> This prototype establishes Madhya Pradesh as a pioneer in ethical, immersive spiritual tourism while building foundational infrastructure for India's metaverse economy in the heritage preservation and growing e-Tourism sector.
+
 Zero Emission e-Tourism for Remote Heritage Sites in MP  
 Team ID: TH11694  
 Project Title: E Tourism for Habitat Preservation  
 Company: X8 Studios (XArt Design and Motion Studio Pvt Ltd)  
 Theme: Low-carbon footprint solutions/technologies  
-
-> This prototype establishes Madhya Pradesh as a pioneer in ethical, immersive spiritual tourism while building foundational infrastructure for India's metaverse economy in the heritage preservation sector.
 
 # Repository Structure
 ```
