@@ -43,9 +43,6 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 
 - Cultural erosion due to sparse digital documentation and loss of oral traditions
 
-![Bateshwar Shrine](https://drive.google.com/file/d/1Cq6UIPP-Xl-FHEofPAhlwjcqVV0hZnzh/view?usp=drive_link)
-![Great Shrine](https://drive.google.com/file/d/1N-FjDaIww3KtMl7kdA34KANzHfHjDKl1/view?usp=drive_link)
-![Gopuram](https://drive.google.com/file/d/11fYFglHoc8-ketQJffLeZcV9Q9x3xN3B/view?usp=drive_link)
 
 # Key Features and Functionalities
 1. High-Fidelity Digital Twin Creation
