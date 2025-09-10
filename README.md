@@ -44,10 +44,6 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 - Cultural erosion due to sparse digital documentation and loss of oral traditions
 
 ![Gopuram](Assets/DIVINE-VIMANA.gif)
-![Shiva Linga](./Assets/SHIVA-LINGA.gif)
-![Shrine](./Assets/SHRINE-OF-ETERNAL-FAITH.gif)
-![Sanctum](./Assets/SANCTUM-OF-GREAT-LORD.gif)
-![Mandala](./Assets/MANDALA-SANCTUARY.gif)
 
 # Key Features and Functionalities
 1. High-Fidelity Digital Twin Creation
@@ -68,6 +64,8 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 
     - XR Kiosks: Public access points at Simhastha 2028 and cultural events
 
+![Shiva Linga](./Assets/SHIVA-LINGA.gif)
+
 3. Cultural Immersion & Storytelling
     - Multilingual voiceovers in Hindi, English, and regional dialects
 
@@ -86,6 +84,8 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 
     - MSME empowerment through digital skills training and employment
 
+![Shrine](./Assets/SHRINE-OF-ETERNAL-FAITH.gif)
+
 5. Community Economic Development
     - Local MSME training in 3D scanning, content creation, and cultural storytelling
 
@@ -94,6 +94,8 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
     - Revenue streams from virtual experiences, NFT artifacts, and educational content
 
     - Skill development in emerging technologies for rural communities
+
+![Sanctum](./Assets/SANCTUM-OF-GREAT-LORD.gif)
 
 # Technology Innovation
 This represents India's first heritage-focused immersive travel solution specifically designed for ecologically sensitive and remote sacred sites. Unlike traditional virtual tours, our prototype delivers:
@@ -105,6 +107,8 @@ This represents India's first heritage-focused immersive travel solution specifi
 - Green-tech MSME economy in remote regions
 
 - Alignment with National Strategy for Sustainable Tourism and Swadesh Darshan 2.0
+
+![Mandala](./Assets/MANDALA-SANCTUARY.gif)
 
 # Target Impact & Applications
 - 15 pilot heritage sites in Madhya Pradesh with deployment at Simhastha 2028
@@ -118,6 +122,8 @@ This represents India's first heritage-focused immersive travel solution specifi
 - Conservation agencies studying sensitive ecosystems non-intrusively
 
 - Corporate CSR programs supporting sustainable tourism initiatives
+
+![Spire](./Assets/ANCIENT-SPIRE.gif)
 
 # Market Alignment & Scalability
 - Heritage tourism market: $32B (2024) → $57B (2033) at 6.8% CAGR
