@@ -43,7 +43,7 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 
 - Cultural erosion due to sparse digital documentation and loss of oral traditions
 
-![Gopuram](.Assets/DIVINE_VIMANA.gif)
+![Gopuram](Assets/DIVINE VIMANA.gif)
 ![Shiva Linga](./Assets/SHIVA_LINGA.gif)
 ![Shrine](./Assets/SHRINE_OF_ETERNAL_FAITH.gif)
 ![Mandala](./Assets/THE_MANDALA_SANCTUARY.gif)
