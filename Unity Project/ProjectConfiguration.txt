@@ -1,0 +1,127 @@
+# Unity Project Configuration
+# ProjectSettings.asset configuration for Heritage Digital Twins
+
+Version Control Mode: Visible Meta Files
+Asset Serialization Mode: Force Text
+Default Behavior Mode: 3D
+
+Company Name: X8 Studios
+Product Name: Heritage Digital Twins MP
+Bundle Identifier: com.x8studios.heritagedigitaltwins
+Version: 1.0.0
+Build Number: 1
+
+# Supported Platforms
+- Android (API 24+) - for AR mobile experiences
+- iOS (12.0+) - for AR mobile experiences  
+- Windows x64 - for VR and dome projection
+- macOS - for development and testing
+- WebGL - for web-based virtual tours
+
+# XR Settings
+XR Plug-in Management:
+- ARCore XR Plugin (Android)
+- ARKit XR Plugin (iOS)
+- OpenXR Plugin (VR headsets)
+- Windows Mixed Reality (HoloLens)
+
+AR Foundation: 4.2.7
+AR Subsystems: 4.2.7
+XR Interaction Toolkit: 2.3.2
+
+# Quality Settings
+Ultra:
+- Texture Quality: Full Res
+- Anti-Aliasing: 8x Multi Sampling
+- Soft Particles: Enabled
+- Shadow Quality: Very High
+- Shadow Resolution: Very High
+- Shadow Cascades: Four Cascades
+
+High:
+- Texture Quality: Full Res
+- Anti-Aliasing: 4x Multi Sampling
+- Soft Particles: Enabled
+- Shadow Quality: High
+- Shadow Resolution: High
+- Shadow Cascades: Two Cascades
+
+Medium (Mobile Default):
+- Texture Quality: Half Res
+- Anti-Aliasing: 2x Multi Sampling
+- Soft Particles: Enabled
+- Shadow Quality: Medium
+- Shadow Resolution: Medium
+- Shadow Cascades: Two Cascades
+
+# Graphics Settings
+Scriptable Render Pipeline: Universal Render Pipeline
+URP Asset: HeritageURP.asset
+
+Rendering Path: Forward
+Color Space: Linear
+HDR Support: Enabled
+Multithreaded Rendering: Enabled
+
+# Audio Settings
+Audio Manager:
+- Volume: 1.0
+- Rolloff Scale: 1.0
+- Doppler Factor: 1.0
+- Default Speaker Mode: Stereo
+- Sample Rate: 48000 Hz
+- DSP Buffer Size: Best Performance
+- Virtual Voice Count: 512
+- Real Voice Count: 32
+
+# Input System
+Input System Package: 1.5.1
+Active Input Handling: Input System Package (New)
+
+# Physics Settings
+Gravity: (0, -9.81, 0)
+Default Material: Heritage Physics Material
+Bounce Threshold: 2
+Sleep Threshold: 0.005
+Default Contact Offset: 0.01
+Default Solver Iterations: 6
+Default Solver Velocity Iterations: 1
+Queries Hit Backfaces: Disabled
+Queries Hit Triggers: Enabled
+Enable Adaptive Force: Disabled
+Cloth Inter-Collision: Disabled
+Cloth Inter-Collision Distance: 0
+Cloth Inter-Collision Stiffness: 0
+
+# Heritage-Specific Layers
+Layer 8: Heritage
+Layer 9: HeritageSite
+Layer 10: CulturalElement
+Layer 11: InteractiveElement
+Layer 12: AR
+Layer 13: VR
+Layer 14: Dome
+Layer 15: UI_Heritage
+
+# Heritage-Specific Tags
+- Heritage
+- HeritageSite
+- CulturalElement
+- TempleStructure
+- Sculpture
+- Inscription
+- InteractivePoint
+- ARPlacement
+- VRTeleport
+- AudioZone
+- TimePeriod
+
+# Physics Matrix (Layer Collision)
+Heritage (8) collides with: Default, Heritage, HeritageSite
+HeritageSite (9) collides with: Default, Heritage, InteractiveElement
+CulturalElement (10) collides with: Default, Heritage, InteractiveElement
+InteractiveElement (11) collides with: Default, Heritage, CulturalElement, HeritageSite
+AR (12) collides with: Default, Heritage
+VR (13) collides with: Default, Heritage
+Dome (14) collides with: Default, Heritage
+UI_Heritage (15) collides with: Nothing (UI only)

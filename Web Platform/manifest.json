@@ -1,0 +1,141 @@
+{
+  "name": "BharatVRsh",
+  "short_name": "BharatVRsh",
+  "description": "Immersive heritage tourism platform for exploring India's cultural sites through AR and virtual tours",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAFA",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["education", "travel", "culture"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/desktop-home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home screen showing heritage sites"
+    },
+    {
+      "src": "/assets/screenshots/mobile-ar.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AR heritage experience on mobile"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore Heritage Sites",
+      "short_name": "Explore",
+      "description": "Browse and explore India's heritage sites",
+      "url": "/#heritage-sites",
+      "icons": [
+        {
+          "src": "/assets/icons/explore-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Start AR Experience",
+      "short_name": "AR",
+      "description": "Launch augmented reality heritage viewer",
+      "url": "/#ar-experience",
+      "icons": [
+        {
+          "src": "/assets/icons/ar-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Virtual Tours",
+      "short_name": "Tours",
+      "description": "Take guided virtual tours of heritage sites",
+      "url": "/#virtual-tours",
+      "icons": [
+        {
+          "src": "/assets/icons/tour-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.bharatvrsh",
+      "id": "com.bharatvrsh"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/bharatvrsh/id123456789"
+    }
+  ],
+  "prefer_related_applications": false,
+  "protocol_handlers": [
+    {
+      "protocol": "web+bharatvrsh",
+      "url": "/heritage-site?id=%s"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}

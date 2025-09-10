@@ -1,0 +1,515 @@
+# BharatVRsh Web Platform
+# Progressive Web Application for Heritage AR Tourism
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience India's heritage sites through immersive AR and virtual tours. Zero-emission cultural tourism platform supporting local communities.">
+    <meta name="keywords" content="heritage tourism, AR, virtual tours, India culture, Madhya Pradesh, Bateshwar temples">
+    <meta name="author" content="X8 Studios">
+    
+    <!-- Progressive Web App Meta Tags -->
+    <meta name="theme-color" content="#D4AF37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="BharatVRsh">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="BharatVRsh - Heritage AR Tourism">
+    <meta property="og:description" content="Explore India's sacred heritage sites through immersive AR experiences. Virtual darshan for all.">
+    <meta property="og:image" content="https://bharatvrsh.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://bharatvrsh.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/heritage.css">
+    <link rel="stylesheet" href="/styles/ar-viewer.css">
+    
+    <title>BharatVRsh - Immersive Heritage Tourism</title>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="loading-text">
+                <h2>BharatVRsh</h2>
+                <p>Loading cultural heritage...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="main-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <img src="/assets/logo.svg" alt="BharatVRsh Logo" class="logo">
+                    <span class="brand-text">BharatVRsh</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#heritage-sites" class="nav-link" data-section="heritage">Heritage Sites</a>
+                    <a href="#virtual-tours" class="nav-link" data-section="tours">Virtual Tours</a>
+                    <a href="#ar-experience" class="nav-link" data-section="ar">AR Experience</a>
+                    <a href="#community" class="nav-link" data-section="community">Community</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                </div>
+                
+                <div class="nav-actions">
+                    <div class="language-selector">
+                        <select id="language-select" class="language-select">
+                            <option value="en">English</option>
+                            <option value="hi">हिंदी</option>
+                            <option value="mr">मराठी</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" id="get-app-btn">Get App</button>
+                    <button class="nav-toggle" id="nav-toggle">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <video autoplay muted loop class="hero-video">
+                    <source src="/assets/videos/heritage-hero.mp4" type="video/mp4">
+                    <img src="/assets/images/heritage-hero.jpg" alt="Heritage Background">
+                </video>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Experience India's Sacred Heritage
+                            <span class="highlight">Without Traveling</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Immerse yourself in virtual darshan of ancient temples, caves, and monuments through cutting-edge AR technology. Zero-emission cultural tourism for everyone.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" id="start-journey-btn">
+                                <span class="material-icons">explore</span>
+                                Start Your Journey
+                            </button>
+                            <button class="btn btn-outline btn-large" id="watch-demo-btn">
+                                <span class="material-icons">play_circle</span>
+                                Watch Demo
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Heritage Sites</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Virtual Visitors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">Zero</span>
+                                <span class="stat-label">Carbon Footprint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="material-icons">keyboard_arrow_down</span>
+            </div>
+        </section>
+
+        <!-- Heritage Sites Section -->
+        <section id="heritage-sites" class="heritage-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Explore Sacred Heritage</h2>
+                    <p class="section-subtitle">
+                        Discover India's most magnificent temples, caves, and monuments through immersive virtual experiences
+                    </p>
+                </div>
+                
+                <!-- Featured Site -->
+                <div class="featured-site">
+                    <div class="featured-content">
+                        <div class="featured-image">
+                            <img src="/assets/images/bateshwar-featured.jpg" alt="Bateshwar Temple Complex">
+                            <div class="featured-badge">Featured</div>
+                            <button class="play-btn" data-site="bateshwar">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="featured-info">
+                            <div class="site-category">Temple Complex</div>
+                            <h3 class="site-title">Bateshwar Temple Complex</h3>
+                            <p class="site-description">
+                                A magnificent cluster of over 200 restored 8th-9th century Hindu temples in Madhya Pradesh, representing one of the largest temple complexes in Asia.
+                            </p>
+                            <div class="site-details">
+                                <div class="detail-item">
+                                    <span class="material-icons">schedule</span>
+                                    <span>45 min tour</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">language</span>
+                                    <span>3 languages</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="material-icons">offline_pin</span>
+                                    <span>Offline available</span>
+                                </div>
+                            </div>
+                            <div class="site-actions">
+                                <button class="btn btn-primary" data-action="start-tour" data-site="bateshwar">
+                                    <span class="material-icons">explore</span>
+                                    Start Virtual Tour
+                                </button>
+                                <button class="btn btn-outline" data-action="view-ar" data-site="bateshwar">
+                                    <span class="material-icons">view_in_ar</span>
+                                    View in AR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sites Grid -->
+                <div class="sites-grid" id="sites-grid">
+                    <!-- Sites will be loaded dynamically -->
+                </div>
+                
+                <!-- Load More -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="load-more-sites">
+                        Load More Sites
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Tours Section -->
+        <section id="virtual-tours" class="tours-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Guided Virtual Tours</h2>
+                    <p class="section-subtitle">
+                        Experience heritage sites with expert local guides through immersive virtual tours
+                    </p>
+                </div>
+                
+                <div class="tours-content">
+                    <div class="tour-categories">
+                        <button class="category-btn active" data-category="all">All Tours</button>
+                        <button class="category-btn" data-category="temples">Temples</button>
+                        <button class="category-btn" data-category="caves">Caves</button>
+                        <button class="category-btn" data-category="forts">Forts</button>
+                        <button class="category-btn" data-category="observatories">Observatories</button>
+                    </div>
+                    
+                    <div class="tours-grid" id="tours-grid">
+                        <!-- Tours will be loaded dynamically -->
+                    </div>
+                </div>
+                
+                <!-- Live Tours Section -->
+                <div class="live-tours-section">
+                    <h3 class="subsection-title">Live Guided Tours</h3>
+                    <p class="subsection-subtitle">Book personal sessions with local heritage experts</p>
+                    
+                    <div class="live-tours-grid" id="live-tours-grid">
+                        <!-- Live tours will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AR Experience Section -->
+        <section id="ar-experience" class="ar-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Augmented Reality Experience</h2>
+                    <p class="section-subtitle">
+                        Bring heritage sites into your space with cutting-edge AR technology
+                    </p>
+                </div>
+                
+                <div class="ar-demo-container">
+                    <div class="ar-demo-content">
+                        <div class="ar-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="material-icons">view_in_ar</span>
+                                </div>
+                                <h4>3D Heritage Models</h4>
+                                <p>High-fidelity 3D reconstructions of temples and monuments</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="material-icons">touch_app</span>
+                                </div>
+                                <h4>Interactive Elements</h4>
+                                <p>Touch and explore architectural details and cultural elements</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <span class="material-icons">record_voice_over</span>
+                                </div>
+                                <h4>Audio Narration</h4>
+                                <p>Expert commentary and cultural stories in multiple languages</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ar-viewer-container">
+                            <div class="ar-viewer" id="ar-viewer">
+                                <div class="ar-placeholder">
+                                    <span class="material-icons">view_in_ar</span>
+                                    <h4>Try AR Experience</h4>
+                                    <p>Click to start AR heritage viewing</p>
+                                    <button class="btn btn-primary" id="start-ar-btn">
+                                        Launch AR Viewer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="device-compatibility">
+                    <h3>Device Compatibility</h3>
+                    <div class="compatibility-grid">
+                        <div class="device-item">
+                            <span class="material-icons">smartphone</span>
+                            <span>Mobile AR</span>
+                        </div>
+                        <div class="device-item">
+                            <span class="material-icons">tablet</span>
+                            <span>Tablet AR</span>
+                        </div>
+                        <div class="device-item">
+                            <span class="material-icons">desktop_windows</span>
+                            <span>WebXR</span>
+                        </div>
+                        <div class="device-item">
+                            <span class="material-icons">headset</span>
+                            <span>VR Headsets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Community & MSME Network</h2>
+                    <p class="section-subtitle">
+                        Supporting local communities through digital heritage tourism
+                    </p>
+                </div>
+                
+                <div class="community-content">
+                    <div class="community-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <span class="material-icons">people</span>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Local Guides</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <span class="material-icons">business</span>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">MSME Partners</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <span class="material-icons">work</span>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Jobs Created</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-initiatives">
+                        <div class="initiative-item">
+                            <h4>Digital Skills Training</h4>
+                            <p>Training local communities in 3D scanning, content creation, and virtual tour guiding</p>
+                        </div>
+                        <div class="initiative-item">
+                            <h4>Heritage Storytelling</h4>
+                            <p>Preserving oral traditions and local stories through digital documentation</p>
+                        </div>
+                        <div class="initiative-item">
+                            <h4>Sustainable Tourism</h4>
+                            <p>Reducing environmental impact while supporting local economies</p>
+                        </div>
+                    </div>
+                    
+                    <div class="join-community">
+                        <h3>Join Our Community</h3>
+                        <p>Become part of India's digital heritage preservation movement</p>
+                        <div class="community-actions">
+                            <button class="btn btn-primary">Become a Guide</button>
+                            <button class="btn btn-outline">Partner with Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/assets/logo.svg" alt="BharatVRsh Logo" class="footer-logo">
+                        <h4>BharatVRsh</h4>
+                        <p>Pioneering immersive heritage tourism for a sustainable future</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Heritage Sites</h5>
+                    <ul>
+                        <li><a href="#">Bateshwar Temples</a></li>
+                        <li><a href="#">Udaygiri Caves</a></li>
+                        <li><a href="#">Dongla Observatory</a></li>
+                        <li><a href="#">Maihar Mata Temple</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Platform</h5>
+                    <ul>
+                        <li><a href="#">Mobile App</a></li>
+                        <li><a href="#">Web Platform</a></li>
+                        <li><a href="#">AR Experience</a></li>
+                        <li><a href="#">Virtual Tours</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Community</h5>
+                    <ul>
+                        <li><a href="#">MSME Network</a></li>
+                        <li><a href="#">Local Guides</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">Training Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 X8 Studios. All rights reserved. Made with ❤️ for India's heritage.</p>
+                <p>Reg No.: TH11694 | CIN: U62011HR2023PTC113585</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <video id="demo-video" controls>
+                <source src="/assets/videos/bharatvrsh-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- AR Viewer Modal -->
+    <div id="ar-modal" class="modal ar-modal">
+        <div class="modal-content ar-modal-content">
+            <div class="ar-modal-header">
+                <h3>Heritage AR Viewer</h3>
+                <button class="modal-close" id="ar-modal-close">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="ar-modal-body">
+                <div id="ar-container"></div>
+                <div class="ar-controls">
+                    <button class="ar-btn" id="place-model">Place Model</button>
+                    <button class="ar-btn" id="start-tour">Start Tour</button>
+                    <button class="ar-btn" id="toggle-info">Toggle Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webxr-input-profiles/motion-controllers@1.0.0/dist/motion-controllers.module.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/heritage-sites.js"></script>
+    <script src="/scripts/ar-viewer.js"></script>
+    <script src="/scripts/tours.js"></script>
+    <script src="/scripts/utils.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
