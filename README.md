@@ -46,9 +46,8 @@ Madhya Pradesh hosts hundreds of ecologically and culturally sensitive heritage 
 ![Gopuram](Assets/DIVINE-VIMANA.gif)
 ![Shiva Linga](./Assets/SHIVA-LINGA.gif)
 ![Shrine](./Assets/SHRINE-OF-ETERNAL-FAITH.gif)
-![Mandala](./Assets/MANDALA-SANCTUARY.gif)
 ![Sanctum](./Assets/SANCTUM-OF-GREAT-LORD.gif)
-
+![Mandala](./Assets/MANDALA-SANCTUARY.gif)
 
 # Key Features and Functionalities
 1. High-Fidelity Digital Twin Creation
